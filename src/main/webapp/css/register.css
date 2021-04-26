@@ -1,0 +1,109 @@
+#show-pass{
+    cursor: pointer;
+    position: absolute;
+    left : 10px;
+    top: 50px;
+    color: gray;
+    transition: color .2s;
+}
+#show-pass2{
+    cursor: pointer;
+    position: absolute;
+    left : 10px;
+    top: 50px;
+    color: gray;
+    transition: color .2s;
+}
+
+#show-pass3{
+    cursor: pointer;
+    position: absolute;
+    left : 10px;
+    top: 50px;
+    color: gray;
+    transition: color .2s;
+}
+
+nav .brand-logo {
+    margin-left: 12px;
+}
+#search-form {
+    margin-left: 15%;
+    margin-right: 200px;
+    padding-top: 12px;
+    transition: all 200ms;
+}
+#search-form i {
+    position: absolute;
+    font-size: 24px;
+    top: 4px;
+    left: 8px;
+    line-height: 32px !important;
+    transition: color 200ms;
+}
+#search-form #search-box {
+    display: block;
+    padding: 8px 8px 8px 50px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    height: 24px;
+    transition: all 200ms;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    border-radius: 3px;
+}
+#search-form #search-box::placeholder {
+    color: #fff;
+    transition: color 200ms;
+}
+#search-form #search-box:focus {
+    color: #333;
+    background: #fff;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+#search-form #search-box:focus::placeholder {
+    color: #333;
+}
+.search-focus {
+    color: #333;
+}
+@media only screen and (max-width: 600px) {
+    #search-form {
+        margin-left: calc(100% - 33%);
+        width: 50px;
+        padding: 0;
+    }
+    #search-form.search-focus {
+        margin-left: 0;
+        width: 100%;
+    }
+    #search-form #search-box {
+        position: absolute;
+        color: transparent;
+        background-color: transparent;
+        height: 100%;
+        border-radius: 0;
+        padding: 0;
+        width: 100%;
+        z-index: 0;
+    }
+    #search-form #search-box::placeholder {
+        color: transparent;
+    }
+    #search-form #search-box:focus {
+        top: 0;
+        padding-left: 18px;
+        width: calc(100vw - 18px);
+    }
+    #search-form i {
+        font-size: 26px;
+        top: 13px;
+        left: initial;
+        right: 18px;
+        z-index: 1;
+    }
+}
