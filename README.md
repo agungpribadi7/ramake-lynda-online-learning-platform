@@ -8,7 +8,7 @@ chatting. Pengumpulan database menggunakan teknik scrapping (code dapat dilihat 
 
 https://www.linkedin.com/learning/me. Projek ini dibuat pada awal tahun 2019, menggunakan package JAVA EE yang mana memanfaatkan servlet dan JSP sebagai fitur utamanya.
 
-Kunjungi website https://lynda-310811.appspot.com/ untuk melihatnya secara langsung dan gunakan email bearcahill@gmail.com dengan password bearcahill. Pada website tersebut,
+Kunjungi website https://lynda-310811.appspot.com/ untuk melihatnya secara langsung dan gunakan email **bearcahill@gmail.com dengan password bearcahill**. Pada website tersebut,
 
 tidak dapat dilakukan proses registrasi karena terkendala pengiriman email verifikasi. Karena ini adalah website remake, maka database juga beberapa ada yang hilang, dan 
 
