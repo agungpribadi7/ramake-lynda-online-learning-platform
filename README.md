@@ -4,7 +4,7 @@ Website yang dikerjakan secara berkelompok berbasiskan google cloud, yang memanf
 
 Website ini telah diremake agar semirip mungkin dengan projek aslinya. Terdapat beberapa fitur yang tidak bisa digunakan seperti fitur pengiriman email dan real-time
 
-chatting. Pengumpulan database menggunakan teknik scrapping (code dapat dilihat pada folder web scrapping) yang mana target scrapping adalah 
+chatting. Pengumpulan database menggunakan teknik scrapping (code lynda.py dan hasil scrapping dapat dilihat pada folder web scrapping) yang mana target scrapping adalah 
 
 https://www.linkedin.com/learning/me. Projek ini dibuat pada awal tahun 2019, menggunakan package JAVA EE yang mana memanfaatkan servlet dan JSP sebagai fitur utamanya.
 
