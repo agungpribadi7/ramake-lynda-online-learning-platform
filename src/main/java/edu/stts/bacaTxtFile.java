@@ -44,7 +44,7 @@ public class bacaTxtFile extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
       try { 
-			 db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+			 db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 			 //for(int i = 0;i< 115;i++) {
 				 //Map<String, Object> c = new HashMap<>(); 
 				 //c.put("kodeverif", "");
@@ -144,7 +144,7 @@ public class bacaTxtFile extends HttpServlet {
 //		String[] bulan = new String[] {"January", "Febuary", "Maret", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
 //        PrintWriter out = response.getWriter();
 //        try { 
-//			 db = FirestoreOptions.newBuilder().setProjectId("proyek-cc-lynda").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+//			 db = FirestoreOptions.newBuilder().setProjectId("proyek-cc-lynda").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 //			 for(int i = 0;i<63;i++) {
 //				 Random rnd = new Random();
 //				 String hari = StringUtils.leftPad(rnd.nextInt(29)+1+"", 2, "0");
@@ -301,7 +301,7 @@ public class bacaTxtFile extends HttpServlet {
 		 }*/
 		 
 		 try { 
-			 //db = FirestoreOptions.newBuilder().setProjectId("proyek-cc-lynda").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+			 //db = FirestoreOptions.newBuilder().setProjectId("proyek-cc-lynda").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 			  
 			 // Insert and update (if the document already exists, it will be updated)
 			 //out.println(hasil_split.length);

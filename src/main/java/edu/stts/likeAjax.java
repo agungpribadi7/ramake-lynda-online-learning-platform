@@ -47,7 +47,7 @@ public class likeAjax extends HttpServlet {
 		System.out.println("tipe "+ tipe);
 		try {
 			
-			Firestore db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();    
+			Firestore db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();    
 			CollectionReference like = db.collection("likes");
 			Query query = null;
 			

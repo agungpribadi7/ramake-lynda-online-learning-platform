@@ -75,7 +75,7 @@ public class AjaxMidtrans extends HttpServlet {
 		
 		try {
 			System.out.println("masuk ajax 0");
-			Firestore db = FirestoreOptions.newBuilder().setProjectId("proyek-cc-lynda").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+			Firestore db = FirestoreOptions.newBuilder().setProjectId("proyek-cc-lynda").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 			CollectionReference transaction = db.collection("transactions");
 			Query query = transaction.whereGreaterThan("id", -1);
 			int idTrans = -1;

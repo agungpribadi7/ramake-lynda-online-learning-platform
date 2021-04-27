@@ -29,7 +29,7 @@ public class ChatClass {
 	public void firstChat(int iduser, int idinstructor) {
 		  int adakah = 0;
 		  try {
-		        db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();    
+		        db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();    
 		        CollectionReference chat = db.collection("chats");
 		        Timestamp waktu = new Timestamp(System.currentTimeMillis());
 		        Query query = chat.whereGreaterThan("id", -1);
@@ -90,7 +90,7 @@ public class ChatClass {
         } 
 		try {
 			//System.out.println("apa instructor = "+apaInstructor);
-			db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();    
+			db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();    
 	        CollectionReference chat = db.collection("chats");
 	        Query query = null;
 	        if(apaInstructor == 0) {

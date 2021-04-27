@@ -135,7 +135,7 @@ public class ProfileForum extends HttpServlet {
 				  int idcourse=0;
 				  String namaRandomgambar = randomString()+".jpg";
 				  String namaRandomvideo = randomString()+".mp4";
-				  db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+				  db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 				  CollectionReference courses = db.collection("courses");
 				  Query query = courses.orderBy("id",Direction.DESCENDING).limit(1);
 				  ApiFuture<QuerySnapshot> querySnapshot = query.get();
@@ -203,7 +203,7 @@ public class ProfileForum extends HttpServlet {
 	  
 	  public void getProfile(String email) { 
 		  try {
-			  db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+			  db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 		        CollectionReference profile = db.collection("users");
 		        Query query = profile.whereEqualTo("email", email);
 		        ApiFuture<QuerySnapshot> future = query.get();
@@ -225,7 +225,7 @@ public class ProfileForum extends HttpServlet {
 	 public void getDeskripsi(String email) { 
 		  try {
 			  	int id=0;
-			  	db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+			  	db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 			  	CollectionReference user = db.collection("users");
       			Query query = user.whereEqualTo("email", email);
 		        ApiFuture<QuerySnapshot> future = query.get();
@@ -253,7 +253,7 @@ public class ProfileForum extends HttpServlet {
 	public int getLikes(int email) { 
 		int out=0;
 		  try {
-			  db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+			  db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 		        CollectionReference profile = db.collection("courses");
 		        Query query = profile.whereEqualTo("index_email", email);
 		        ApiFuture<QuerySnapshot> future = query.get();
@@ -269,7 +269,7 @@ public class ProfileForum extends HttpServlet {
 	
 	public ArrayList getInfoFromEmail(String email) throws FileNotFoundException, IOException, InterruptedException, ExecutionException {
 		  System.out.println("masuk 0"+email); 
-		  db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();    
+		  db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();    
 
 	      CollectionReference user = db.collection("users");
 	        Query query = user.whereEqualTo("email", email);
@@ -298,7 +298,7 @@ public class ProfileForum extends HttpServlet {
 	}
 	
 	public ArrayList getInfoFromindexEmail(String email) throws FileNotFoundException, IOException, InterruptedException, ExecutionException {  
-		  db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();    
+		  db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();    
 		      CollectionReference user = db.collection("users");
 		        Query query = user.whereEqualTo("id", Integer.parseInt(email));
 		        ApiFuture<QuerySnapshot> future = query.get();
@@ -330,7 +330,7 @@ public class ProfileForum extends HttpServlet {
 		 String id_profile = "";
 		  try {
 			  	String id_doc="";
-				db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+				db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 				CollectionReference user = db.collection("users");
         		Query query = user.whereEqualTo("email", index_email);
 		        ApiFuture<QuerySnapshot> future = query.get();
@@ -378,7 +378,7 @@ public class ProfileForum extends HttpServlet {
 		  return param;
 	}
 	public String getFotoFromEmail(String email) throws FileNotFoundException, IOException, InterruptedException, ExecutionException {
-		 db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();    
+		 db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();    
 	     CollectionReference courses = db.collection("users");
 	        
        Query query = courses.whereEqualTo("email", email);
@@ -396,7 +396,7 @@ public class ProfileForum extends HttpServlet {
 	public String getIdemail(String email) {
 		String output="";
 		  try {
-		        db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();    
+		        db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();    
 		        
 		        CollectionReference users = db.collection("users");
 		        Query query = users.whereEqualTo("email", email);
@@ -417,7 +417,7 @@ public class ProfileForum extends HttpServlet {
 		      output[i] = new ArrayList<String>(); 
 		  } 
 		  try {
-		        db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+		        db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 		        CollectionReference view = db.collection("views");
 		        Query query = view.whereEqualTo("iduser", Integer.parseInt(email)).orderBy("id", Direction.DESCENDING).limit(10);
 		        ApiFuture<QuerySnapshot> querySnapshot = query.get();
@@ -456,7 +456,7 @@ public class ProfileForum extends HttpServlet {
             output[i] = new ArrayList<String>(); 
         } 
 		  try {
-		        db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();    
+		        db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();    
 		        System.out.print("masuk function get course "+email);
 		        CollectionReference courses = db.collection("courses");
 		        Query query1 = courses.whereEqualTo("index_email", Integer.parseInt(email));
@@ -487,7 +487,7 @@ public class ProfileForum extends HttpServlet {
 	public String getTotalVideo(String email) {
 		  String output = "";
 		  try {
-		        db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();    
+		        db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();    
 		        
 		        CollectionReference courses = db.collection("courses");
 		        int idx = 0;

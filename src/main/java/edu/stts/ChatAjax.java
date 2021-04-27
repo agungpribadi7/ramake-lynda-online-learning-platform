@@ -47,7 +47,7 @@ public class ChatAjax extends HttpServlet {
 		String pesan = request.getParameter("pesan");
 		
 		try {
-			Firestore db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();    
+			Firestore db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();    
 			CollectionReference chat = db.collection("chats");
 			Query query2 = null;
 			

@@ -61,7 +61,7 @@ public class adminAjax extends HttpServlet {
 		final String passwordEmail = "giovano123.";
 		if(type.equals("banInstructor")) {
 			try {
-			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 			    CollectionReference userData = db.collection("users");
 			    Query query = userData.whereEqualTo("id", id);
 			    ApiFuture<QuerySnapshot> querySnapshot = query.get();
@@ -88,7 +88,7 @@ public class adminAjax extends HttpServlet {
 		}
 		else if(type.equals("unbanInstructor")) {
 			try {
-			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 			    CollectionReference userData = db.collection("users");
 			    Query query = userData.whereEqualTo("id", id);
 			    ApiFuture<QuerySnapshot> querySnapshot = query.get();
@@ -115,7 +115,7 @@ public class adminAjax extends HttpServlet {
 		}
 		else if(type.equals("banStudent")) {
 			try {
-			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 			    CollectionReference userData = db.collection("users");
 			    Query query = userData.whereEqualTo("id", id);
 			    ApiFuture<QuerySnapshot> querySnapshot = query.get();
@@ -133,7 +133,7 @@ public class adminAjax extends HttpServlet {
 		}
 		else if(type.equals("unbanStudent")) {
 			try {
-			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 			    CollectionReference userData = db.collection("users");
 			    Query query = userData.whereEqualTo("id", id);
 			    ApiFuture<QuerySnapshot> querySnapshot = query.get();
@@ -151,7 +151,7 @@ public class adminAjax extends HttpServlet {
 		}
 		else if(type.equals("approveInstructor")) {
 			try {
-			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 			    CollectionReference userData = db.collection("instructors");
 			    Query query = userData.whereEqualTo("id", id);
 			    ApiFuture<QuerySnapshot> querySnapshot = query.get();
@@ -194,7 +194,7 @@ public class adminAjax extends HttpServlet {
 		}
 		else if(type.equals("disapproveInstructor")) {
 			try {
-			 	db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+			 	db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 			    CollectionReference userData = db.collection("instructors");
 			    Query query = userData.whereEqualTo("id", id);
 			    ApiFuture<QuerySnapshot> querySnapshot = query.get();
@@ -237,7 +237,7 @@ public class adminAjax extends HttpServlet {
 		else if(type.equals("changeTopic")) {
 			String name = request.getParameter("name");
 			try {
-			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 			    CollectionReference topicData = db.collection("topic");
 			    Query query = topicData.whereEqualTo("id", id);
 			    ApiFuture<QuerySnapshot> querySnapshot = query.get();
@@ -281,7 +281,7 @@ public class adminAjax extends HttpServlet {
 		else if(type.equals("changeSubtopic")) {
 			String name = request.getParameter("name");
 			try {
-			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 			    CollectionReference topicData = db.collection("subtopic");
 			    Query query = topicData.whereEqualTo("id", id);
 			    ApiFuture<QuerySnapshot> querySnapshot = query.get();
@@ -316,7 +316,7 @@ public class adminAjax extends HttpServlet {
 			int forId = -1;
 			String forDoc ="";
 			try {
-			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 			    
 			    CollectionReference topicDataX = db.collection("topic");
 			    Query queryXX = topicDataX.whereEqualTo("nama", header);
@@ -367,7 +367,7 @@ public class adminAjax extends HttpServlet {
 			int forId = -1;
 			String forDoc ="";
 			try {
-			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 			    
 			    CollectionReference topicData = db.collection("topic");
 			    Query query = topicData.whereGreaterThan("id", -1);	   
@@ -407,7 +407,7 @@ public class adminAjax extends HttpServlet {
 		}
 		else if(type.equals("banCourse")) {
 			try {
-			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 			    CollectionReference courseData = db.collection("courses");
 			    Query query = courseData.whereEqualTo("id", id);
 			    ApiFuture<QuerySnapshot> querySnapshot = query.get();
@@ -425,7 +425,7 @@ public class adminAjax extends HttpServlet {
 		}
 		else if(type.equals("unbanCourse")) {
 			try {
-			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 			    CollectionReference courseData = db.collection("courses");
 			    Query query = courseData.whereEqualTo("id", id);
 			    ApiFuture<QuerySnapshot> querySnapshot = query.get();
@@ -447,7 +447,7 @@ public class adminAjax extends HttpServlet {
 				int iduser = Integer.parseInt(Siduser);
 				String Stotal = request.getParameter("total");
 				int total = Integer.parseInt(Stotal);
-			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+			    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 			    CollectionReference transactionData = db.collection("transactions");
 			    Query query = transactionData.whereEqualTo("id", id);
 			    ApiFuture<QuerySnapshot> querySnapshot = query.get();

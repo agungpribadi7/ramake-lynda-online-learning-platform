@@ -39,7 +39,7 @@ public class WalletClass {
 	public int getWalletFromId(int id) {
 		int wallet = -1;
 		try {
-			Firestore db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();    
+			Firestore db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();    
 	        CollectionReference user = db.collection("users");
 	        Query query = user.whereEqualTo("id", id);
 	        ApiFuture<QuerySnapshot> future = query.get();
@@ -60,7 +60,7 @@ public class WalletClass {
 		String iddoc = "";
 		 System.out.println("Durasi  sebelum = "+durasi);
 		try {
-			Firestore db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+			Firestore db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 			CollectionReference transaction = db.collection("transactions");
 			Query query = transaction.whereEqualTo("iduser", iduser).whereEqualTo("accepted", 1).whereEqualTo("tipe", 1);		    		
 		    ApiFuture<QuerySnapshot> querySnapshot = query.get();
@@ -173,7 +173,7 @@ public class WalletClass {
 	public ArrayList getDurasiPremium(int iduser) {
 		ArrayList output = new ArrayList();
 		try {
-			Firestore db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+			Firestore db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 			CollectionReference transaction = db.collection("transactions");
     		Query query = transaction.whereEqualTo("iduser", iduser).whereEqualTo("accepted", 1).whereEqualTo("tipe", 1);			    		
 		    ApiFuture<QuerySnapshot> querySnapshot3 = query.get();
@@ -219,7 +219,7 @@ public class WalletClass {
 	public void disablePremium(int iduser) {
 		
 		try {
-			Firestore db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();
+			Firestore db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();
 			Map<String, Object> c = new HashMap<>(); 
 			c.put("premium", 0);
 			String id = StringUtils.leftPad(iduser+"", 4, "0"); 

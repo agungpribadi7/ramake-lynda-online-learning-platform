@@ -47,7 +47,7 @@ public class StorageClass {
 		Storage storage = StorageOptions.newBuilder()
 				.setProjectId("lynda-310811")
 				.setCredentials(ServiceAccountCredentials
-				.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build()
+				.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build()
 				.getService();
 	  	
 	  	String bucketName = "lynda-310811.appspot.com";
@@ -59,7 +59,7 @@ public class StorageClass {
 		Storage storage = StorageOptions.newBuilder()
 				.setProjectId("lynda-310811")
 				.setCredentials(ServiceAccountCredentials
-				.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build()
+				.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build()
 				.getService();
 	  	
 	  	String bucketName = "lynda-310811.appspot.com";
@@ -75,7 +75,7 @@ public class StorageClass {
 		Storage storage = StorageOptions.newBuilder()
 				.setProjectId("lynda-310811")
 				.setCredentials(ServiceAccountCredentials
-				.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build()
+				.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build()
 				.getService();
 		BlobId blobId = BlobId.of("lynda-310811.appspot.com", folder+"/"+namafile);
 		boolean deleted = storage.delete(blobId);
@@ -91,7 +91,7 @@ public class StorageClass {
   	  	Part file = file1;//file fotonya
 	    Storage storage = StorageOptions.newBuilder()
 		        .setProjectId("lynda-310811")
-		        .setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json")))
+		        .setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json")))
 		        .build()
 		        .getService();
 		

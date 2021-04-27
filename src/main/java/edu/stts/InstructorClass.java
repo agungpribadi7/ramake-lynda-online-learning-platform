@@ -37,7 +37,7 @@ public class InstructorClass {
 		final String passwordEmail = "giovano123.";
 		String temp = "";
 		 try { 
-		    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();    
+		    db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();    
 			CollectionReference users = db.collection("users");
 	        Query query = users.whereEqualTo("email", email);
 	        ApiFuture<QuerySnapshot> querySnapshot = query.get();
@@ -143,7 +143,7 @@ public class InstructorClass {
 	public int getIdDetailEmailByName(String name) {
 		int id = -1;
 		try {
-			db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-08c61c30aea2.json"))).build().getService();    
+			db = FirestoreOptions.newBuilder().setProjectId("lynda-310811").setCredentials(ServiceAccountCredentials.fromStream(new FileInputStream("lynda-310811-e0f6c225dbfe.json"))).build().getService();    
 			CollectionReference instructor = db.collection("instructors");
 	        Query query = instructor.whereEqualTo("nama", name).limit(1);
 	        ApiFuture<QuerySnapshot> querySnapshot = query.get();
