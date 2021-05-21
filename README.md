@@ -8,11 +8,9 @@ chatting. Pengumpulan database menggunakan teknik scrapping (code lynda.py dan h
 
 https://www.linkedin.com/learning/me. Projek ini dibuat pada awal tahun 2019, menggunakan package JAVA EE yang mana memanfaatkan servlet dan JSP sebagai fitur utamanya.
 
-Kunjungi website https://lynda-310811.appspot.com/ untuk melihatnya secara langsung dan gunakan email **bearcahill@gmail.com dengan password bearcahill**. Pada website tersebut,
+Projek ini tidak memiliki website yang dapat dibuka, dikarenakan billing gratis pada google cloud sudah habis (penggunaan kartu kredit akan berjalan kalau sudah habis). 
 
-tidak dapat dilakukan proses registrasi karena terkendala pengiriman email verifikasi. Karena ini adalah website remake, maka database juga beberapa ada yang hilang, dan 
-
-sudah dibuat semirip mungkin. Kunjungi https://lynda-310811.appspot.com/adminPage.jsp?koderahasia=hehe untuk melihat dashboard bagian admin.
+Sebagai gantinya silahkan cek link youtube berikut : 
 
 **Pendapat pribadi:** 
 
