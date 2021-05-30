@@ -10,7 +10,7 @@ https://www.linkedin.com/learning/me. Projek ini dibuat pada awal tahun 2019, me
 
 Projek ini tidak memiliki website yang dapat dibuka, dikarenakan billing gratis pada google cloud sudah habis (penggunaan kartu kredit akan berjalan kalau sudah habis). 
 
-Sebagai gantinya silahkan cek link youtube berikut : 
+Sebagai gantinya silahkan cek link youtube berikut : https://youtu.be/_3p0Fj6aKZI
 
 **Pendapat pribadi:** 
 
